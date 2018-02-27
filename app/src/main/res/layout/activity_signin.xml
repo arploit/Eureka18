@@ -4,101 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient">
+    android:background="#424242">
 
            <LinearLayout
-
-               android:layout_width="match_parent"
+                android:id="@+id/Login_linearLayout"
+               android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:layout_marginRight="25dp"
-               android:layout_marginLeft="25dp"
                android:orientation="vertical"
-               android:layout_gravity="center">
+               android:background="#F5F5F5"
+               android:layout_marginLeft="70dp"
+               android:layout_marginTop="90dp">
                <EditText
                    android:id="@+id/activity_signin_UserName"
-                   style="@style/edittext"
-                   android:hint="@string/user_name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="User Name"
 
 
                    />
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_weight="2"
-                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <EditText
                             android:id="@+id/activity_signin_FirstName"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            style="@style/edittext"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="@string/first_name"/>
+                            android:hint="First Name"/>
                         <EditText
                             android:id="@+id/activity_signin_LastName"
-                            android:layout_width="0dp"
-                            style="@style/edittext"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="@string/last_name"/>
+                            android:hint="Last Name"/>
                     </LinearLayout>
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
                         <EditText
                             android:id="@+id/activity_signin_Mobileno"
-                            style="@style/edittext"
-                            android:hint="@string/mobile_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile no"
                             android:inputType="number"/>
                         <EditText
                             android:id="@+id/activity_signin_Email"
-                            style="@style/edittext"
-                            android:hint="@string/email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
                             android:inputType="textEmailAddress"/>
 
 
 
                     </LinearLayout>
                <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_weight="2"
+                   android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:layout_marginTop="10dp"
                    android:orientation="horizontal">
                    <EditText
                        android:id="@+id/activity_signin_Password"
-                       android:layout_width="0dp"
-                       android:layout_weight="1"
+                       android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:hint="@string/password"
+                       android:hint="Password"
                        tools:ignore="TextFields"
-                       style="@style/edittext"
                        android:inputType="textPassword"/>
                    <EditText
 
-                       android:layout_width="0dp"
-                       android:layout_weight="1"
-                       style="@style/edittext"
+                       android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:hint="@string/confirm_password"
+                       android:hint="Confirm Password"
                        android:inputType="textPassword"
                        />
                </LinearLayout>
                <Button
                    android:id="@+id/activity_signinButton"
-                   android:layout_marginTop="10dp"
-                   android:background="@drawable/buttonstyle1"
-                   android:clickable="true"
-                   style="@style/button"
-                   android:text="@string/sign_in"/>
-               <ProgressBar
-                   android:id="@+id/ProgressBar"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
+                   android:text="Sign In"/>
 
-                   android:visibility="gone"/>
            </LinearLayout>
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Login_linearLayout"
+        android:visibility="gone"/>
 
 </ScrollView>

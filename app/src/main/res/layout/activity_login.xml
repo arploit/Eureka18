@@ -14,44 +14,44 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_centerHorizontal="true"
-            android:src="@mipmap/elogo"
+
             />
 
 
 
 
         <EditText
-       android:id="@+id/Login_UserName"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:inputType="textEmailAddress"
-       android:background="@android:color/transparent"
-       android:drawablePadding="12dp"
-       android:padding="8dp"
-       android:hint="Username "
-       android:textColorHint="#000000"
-       android:layout_marginTop="150dp"
-       android:layout_marginLeft="10dp"
-       android:drawableLeft="@drawable/ic_action_person"
-       android:textColor="#ffffff"
-       />
+            android:id="@+id/Login_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:background="@android:color/transparent"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:hint="Username "
+            android:textColorHint="#000000"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:textColor="#ffffff"
+            />
 
-    <EditText
-        android:id="@+id/Login_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:background="@android:color/transparent"
-        android:drawablePadding="12dp"
-        android:padding="8dp"
-        android:textColorHint="#000000"
-        android:hint="Password"
-        android:layout_below="@id/Login_UserName"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:drawableLeft="@drawable/ic_action_lock"
-        android:textColor="#ffffff"
-        />
+        <EditText
+            android:id="@+id/Login_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:textColorHint="#000000"
+            android:hint="Password"
+            android:layout_below="@id/Login_UserName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:textColor="#ffffff"
+            />
 
         <View
             android:layout_width="match_parent"
@@ -67,35 +67,33 @@
             android:layout_marginLeft="10dp"/>
 
 
+        <Button
+            android:id="@+id/LoginButton"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Login_password"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonstyle1"
+            android:clickable="true"
+            android:text="Login"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/SignInButton"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LoginButton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle1"
+            android:clickable="true"
+            android:text="sign IN"
+            android:textColor="#000000" />
 
 
-            <Button
-                android:id="@+id/LoginButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Login"
-                android:textColor="#000000"
-                android:background="@drawable/buttonstyle1"
-                android:layout_below="@id/Login_password"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="10dp"
-                android:clickable="true"
-                style="@style/Base.TextAppearance.AppCompat.Body1"/>
-
-            <Button
-                android:id="@+id/SignInButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="sign IN"
-                android:textColor="#000000"
-                android:layout_below="@id/LoginButton"
-                android:background="@drawable/buttonstyle1"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:clickable="true"
-                style="@style/Base.TextAppearance.AppCompat.Body1"/>
-
-               
 
 
 
