@@ -53,7 +53,7 @@
             android:textColor="#f16f7d"
             android:background="@drawable/buttonstyle1"
             android:layout_marginTop="50dp"
-            style="@style/Base.TextAppearance.AppCompat.Body/>
+           />
                    
         <ProgressBar
             android:id="@+id/ProgressBar"
