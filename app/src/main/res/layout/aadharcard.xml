@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter Your Aadhar Number"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:textSize="20dp"
         android:layout_marginBottom="20dp"
         />
@@ -31,13 +31,15 @@
         android:drawablePadding="12dp"
         android:padding="8dp"
         android:hint="Aadhar Number"
-        android:textColorHint="#ffffff"
+        android:textColorHint="#000000"
+        android:inputType="number"
+
 
       />
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#f9d7db" />
+            android:background="#000000" />
 
 
         <TextView
@@ -50,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="OKAY"
-            android:textColor="#f16f7d"
+            android:textColor="#000000"
             android:background="@drawable/buttonstyle1"
             android:layout_marginTop="50dp"
            />
