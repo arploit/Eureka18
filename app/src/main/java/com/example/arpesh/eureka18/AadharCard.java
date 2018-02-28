@@ -27,6 +27,10 @@ public class AadharCard extends AppCompatActivity {
         setContentView(R.layout.aadharcard);
         progressBar = findViewById(R.id.ProgressBar);
         inputAadhar = findViewById(R.id.UniqueID_EditText);
+                        inputAadhar.setTextIsSelectable(true);
+                        inputAadhar.setFocusableInTouchMode(true);
+                        inputAadhar.setFocusable(true);
+
         MobileNo = findViewById(R.id.UniqueID_MobileNO);
         OKay = findViewById(R.id.UniqueID_BUTTON);
 

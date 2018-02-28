@@ -7,21 +7,17 @@
     android:background="#424242">
 
            <LinearLayout
-                android:id="@+id/Login_linearLayout"
-               android:layout_width="wrap_content"
+                android:id="@+id/SignUp_linearLayout"
+               android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:orientation="vertical"
                android:background="#F5F5F5"
-               android:layout_marginLeft="70dp"
-               android:layout_marginTop="90dp">
+               >
                <EditText
                    android:id="@+id/activity_signin_UserName"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:hint="User Name"
-
-
-                   />
+                   android:hint="@string/user_name"/>
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -31,12 +27,12 @@
                             android:id="@+id/activity_signin_FirstName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="First Name"/>
+                            android:hint="@string/first_name"/>
                         <EditText
                             android:id="@+id/activity_signin_LastName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="Last Name"/>
+                            android:hint="@string/last_name"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -46,17 +42,14 @@
                             android:id="@+id/activity_signin_Mobileno"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="Mobile no"
+                            android:hint="@string/mobile_no"
                             android:inputType="number"/>
                         <EditText
                             android:id="@+id/activity_signin_Email"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="Email"
+                            android:hint="@string/email"
                             android:inputType="textEmailAddress"/>
-
-
-
                     </LinearLayout>
                <LinearLayout
                    android:layout_width="wrap_content"
@@ -66,14 +59,14 @@
                        android:id="@+id/activity_signin_Password"
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:hint="Password"
+                       android:hint="@string/password"
                        tools:ignore="TextFields"
                        android:inputType="textPassword"/>
                    <EditText
 
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:hint="Confirm Password"
+                       android:hint="@string/confirm_password"
                        android:inputType="textPassword"
                        />
                </LinearLayout>
@@ -81,14 +74,14 @@
                    android:id="@+id/activity_signinButton"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="Sign In"/>
+                   android:text="@string/sign_in"/>
+               <ProgressBar
+                   android:id="@+id/ProgressBar"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:visibility="gone"/>
 
            </LinearLayout>
-    <ProgressBar
-        android:id="@+id/ProgressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/Login_linearLayout"
-        android:visibility="gone"/>
+
 
 </ScrollView>

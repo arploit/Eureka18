@@ -31,12 +31,33 @@ public class SignIn extends AppCompatActivity{
         setContentView(R.layout.activity_signin);
         progressBar = findViewById(R.id.ProgressBar);
         InputUserName = findViewById(R.id.activity_signin_UserName);
-        InputFname = findViewById(R.id.activity_signin_FirstName);
-        InputLname = findViewById(R.id.activity_signin_LastName);
-        InputMobileno = findViewById(R.id.activity_signin_Mobileno);
+                     InputUserName .setTextIsSelectable(true);
+                     InputUserName .setFocusableInTouchMode(true);
+                     InputUserName .setFocusable(true);
+                     InputUserName.setClickable(true);
         InputEmail = findViewById(R.id.activity_signin_Email);
+                    InputEmail.setTextIsSelectable(true);
+                    InputEmail.setFocusableInTouchMode(true);
+                    InputEmail.setFocusable(true);
+        InputFname = findViewById(R.id.activity_signin_FirstName);
+                    InputFname.setTextIsSelectable(true);
+                    InputFname.setFocusableInTouchMode(true);
+                    InputFname.setFocusable(true);
+        InputLname = findViewById(R.id.activity_signin_LastName);
+                    InputLname.setTextIsSelectable(true);
+                    InputLname.setFocusableInTouchMode(true);
+                    InputLname.setFocusable(true);
+        InputMobileno = findViewById(R.id.activity_signin_Mobileno);
+                    InputMobileno.setTextIsSelectable(true);
+                    InputMobileno.setFocusableInTouchMode(true);
+                    InputMobileno.setFocusable(true);
         InputPassword = findViewById(R.id.activity_signin_Password);
+                    InputPassword .setFocusable(true);
+                    InputPassword .setTextIsSelectable(true);
+                    InputPassword .setFocusableInTouchMode(true);
+
         SignIn = findViewById(R.id.activity_signinButton);
+
         SignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

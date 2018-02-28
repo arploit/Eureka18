@@ -1,6 +1,8 @@
 package com.example.arpesh.eureka18;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
@@ -23,7 +25,10 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
+
+import static java.util.Objects.*;
 
 /**
  * Created by arpesh on 20/2/18 6:40 AM Eureka18.
@@ -48,10 +53,15 @@ public class OtpForUser extends AppCompatActivity {
         mNumber = findViewById(R.id.OtpForUser_MobileNo);
         mOtp = findViewById(R.id.OtpForUser_OTP);
         mVerify = findViewById(R.id.OtpForUser_OTPBtn);
-        final String mNumbers = getIntent().getExtras().getString("Mobile no");
-        mNumber.setText(mNumbers);
+        final String mnumbers = getIntent().getExtras().getString("Mobile no");
+        mNumber.setText(mnumbers);
+        mOtp.setClickable(true);
+        mOtp.setTextIsSelectable(true);
+        mOtp.setFocusableInTouchMode(true);
+        mOtp.setFocusable(true);
         mAuth = FirebaseAuth.getInstance();
         mVerify.setOnClickListener(new View.OnClickListener() {
+            @TargetApi(Build.VERSION_CODES.KITKAT)
             @Override
             public void onClick(View view) {
 
@@ -60,7 +70,7 @@ public class OtpForUser extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "OTP Sent", Toast.LENGTH_SHORT).show();
 
                     PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                            mNumbers,
+                            mnumbers,
                             120,
                             TimeUnit.SECONDS,
                             OtpForUser.this,
@@ -105,7 +115,7 @@ public class OtpForUser extends AppCompatActivity {
                 btnType = 1;
                 mforceResendingToken = forceResendingToken;
                 mVerify.setEnabled(true);
-                mVerify.setText("Verify OTP");
+                mVerify.setText(R.string.verify_otp);
                 mOtp.setVisibility(View.VISIBLE);
             }
         };}
