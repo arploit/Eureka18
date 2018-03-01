@@ -124,7 +124,18 @@ public class AddressBackground extends AsyncTask<String,Void , String> {
             textView1.setText(result);
 
             btn.setEnabled(true);
+            btn.setText("Correct");
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    GetAddress getAddress = new GetAddress();
+                    getAddress.getAddress();
+
+                }
+            });
 
         }
     }
+
+
 }
