@@ -18,24 +18,19 @@
         android:id="@+id/UniqueID_TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter Your Aadhar Number"
+        android:text="@string/enter_your_aadhar_number"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_marginBottom="20dp"
         />
 
     <EditText
         android:id="@+id/UniqueID_EditText"
-      android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawablePadding="12dp"
-        android:padding="8dp"
-        android:hint="Aadhar Number"
-        android:textColorHint="#000000"
+        style="@style/edittext"
+        android:hint="@string/aadhar_number"
         android:inputType="number"
-
-
       />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -51,7 +46,7 @@
             android:id="@+id/UniqueID_BUTTON"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="OKAY"
+            android:text="@string/okay"
             android:textColor="#000000"
             android:background="@drawable/buttonstyle1"
             android:layout_marginTop="50dp"

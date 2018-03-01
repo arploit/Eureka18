@@ -8,5 +8,16 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
-    <string name="sign_in">Sign In</string>
+    <string name="sign_in">Sign up</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="sign_up">sign up</string>
+    <string name="mobileno">MobileNO</string>
+    <string name="otp">OTP</string>
+    <string name="send_otp">Send Otp</string>
+    <string name="icon">icon</string>
+    <string name="enter_your_aadhar_number">Enter Your Aadhar Number</string>
+    <string name="aadhar_number">Aadhar Number</string>
+    <string name="okay">OKAY</string>
+
 </resources>

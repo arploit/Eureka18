@@ -3,28 +3,30 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:gravity="center"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/OtpForUser_MobileNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MobileNO"
-        android:textSize="24dp"
+        android:text="@string/mobileno"
+        android:textSize="24sp"
         tools:layout_editor_absoluteX="38dp"
         tools:layout_editor_absoluteY="16dp" />
 
     <EditText
         android:id="@+id/OtpForUser_OTP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/edittext"
+        android:layout_width="match_parent"
         android:layout_below="@id/OtpForUser_MobileNo"
-        android:hint="OTP"
+        android:hint="@string/otp"
+        android:textSize="23sp"
         android:visibility="gone" />
     <Button
         android:id="@+id/OtpForUser_OTPBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send Otp"
+        android:text="@string/send_otp"
         android:layout_below="@id/OtpForUser_OTP"/>
 </RelativeLayout>

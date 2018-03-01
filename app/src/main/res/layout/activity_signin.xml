@@ -30,17 +30,11 @@
 
                         <EditText
                             android:id="@+id/activity_signin_FirstName"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            style="@style/edittext"
-                            android:layout_height="wrap_content"
+                            style="@style/equaldivi"
                             android:hint="@string/first_name"/>
                         <EditText
                             android:id="@+id/activity_signin_LastName"
-                            android:layout_width="0dp"
-                            style="@style/edittext"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
+                            style="@style/equaldivi"
                             android:hint="@string/last_name"/>
                     </LinearLayout>
                     <LinearLayout
@@ -69,19 +63,12 @@
                    android:orientation="horizontal">
                    <EditText
                        android:id="@+id/activity_signin_Password"
-                       android:layout_width="0dp"
-                       android:layout_weight="1"
-                       android:layout_height="wrap_content"
                        android:hint="@string/password"
                        tools:ignore="TextFields"
-                       style="@style/edittext"
+                       style="@style/equaldivi"
                        android:inputType="textPassword"/>
                    <EditText
-
-                       android:layout_width="0dp"
-                       android:layout_weight="1"
-                       style="@style/edittext"
-                       android:layout_height="wrap_content"
+                       style="@style/equaldivi"
                        android:hint="@string/confirm_password"
                        android:inputType="textPassword"
                        />
@@ -92,7 +79,8 @@
                    android:background="@drawable/buttonstyle1"
                    android:clickable="true"
                    style="@style/button"
-                   android:text="@string/sign_in"/>
+                   android:text="@string/sign_in"
+                   android:focusable="true"/>
                <ProgressBar
                    android:id="@+id/ProgressBar"
                    android:layout_width="wrap_content"
