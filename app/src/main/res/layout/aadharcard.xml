@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+
 
     >
     <LinearLayout
@@ -19,27 +18,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter Your Aadhar Number"
-        android:textColor="#000000"
         android:textSize="20dp"
-        android:layout_marginBottom="20dp"
+
         />
 
     <EditText
         android:id="@+id/UniqueID_EditText"
-      android:layout_width="match_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawablePadding="12dp"
-        android:padding="8dp"
         android:hint="Aadhar Number"
-        android:textColorHint="#000000"
-        android:inputType="number"
+        android:inputType="number"/>
 
-
-      />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000" />
 
 
         <TextView
@@ -52,9 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="OKAY"
-            android:textColor="#000000"
-            android:background="@drawable/buttonstyle1"
-            android:layout_marginTop="50dp"
+
            />
                    
         <ProgressBar
